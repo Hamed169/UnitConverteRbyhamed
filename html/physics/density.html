@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<title>Petra Unit Converter - By :Hamed Samir</title>
+<head>
+  <link rel="icon" href="../../image/calculator_icon.png">
+  <link rel="stylesheet" href="../../style/index.css">
+  <!-- bootstrap --><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   <!--Font awesomq-->
+
+<!--Meta tags-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0,shrink-to-fit=no">
+<!--Meta tags above-->
+
+<img src="123.png" alt="PETRA " width="100%" height="200" class="center">
+</head>
+<body>
+    <h2 class="text-center text-white bg-dark text-uppercase header-text"> <a href="#" class="text-light">Petra Unit Converter</a> <i class="fa fa-calculator"></i></h2>
+            <div class="container jumbotron">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="dropdown-container text-center">
+                    <div class="dropdown">
+                        <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Unit Conversion 
+                        </a>
+                      
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <a class="dropdown-item" href="length.html">Length</a>
+                          <a class="dropdown-item" href="temperature.html">Temperature</a>
+                          <a class="dropdown-item" href="speed.html">Speed</a>
+                          <a class="dropdown-item" href="Barometric.html">Barometric</a>
+                          <a class="dropdown-item" href="../../index.html">Weight</a>
+                          <a class="dropdown-item" href="Density.html">Density</a>
+                          <a class="dropdown-item" href="circle.html">Circle Area</a>
+                          <a class="dropdown-item" href="square.html">Square Area</a>
+                          <a class="dropdown-item" href="rectangle.html">Rectangle Area</a>
+                                    </div>
+                                  </div>
+                                  </div>
+            
+            
+                    </div>
+               </div>
+
+
+      
+        <div class="text-center">
+
+          <h1> Density Converter</h1>
+<div class="row">
+  <div class="col">
+  <label style="font-weight: bold;">Grams/liter</label><br>
+  <input id="pounds" class="form-control text-center mb-2  mr-sm-2" type="number" placeholder="Grams/liter"
+  onchange="fromPoundsToOther(this.value)" oninput="fromPoundsToOther(this.value)"></div>
+        <div class="col ">
+<label style="font-weight: bold;">Grams/milliliters</label><br>
+<input id= "grams" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Grams/milliliters"
+onchange="fromGramToOthers(this.value)" oninput = "fromGramToOthers(this.value)">
+</div>
+</div>
+
+
+<div class="row">
+  <div class="col">
+  <label style="font-weight: bold;">kilogram/cubic meters</label><br>
+<input id= "kilogram" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="kilogram/cubic meters"
+onchange="fromKilogramToOther(this.value)" oninput = "fromKilogramToOther(this.value)">
+</div>
+<div class="col">
+<label style="font-weight: bold;">kilogram/liter</label><br>
+<input id= "oz" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="kilogram/liter"
+onchange="fromOuncesToOther(this.value)" oninput = "fromOuncesToOther(this.value)">
+</div>
+</div>
+
+<div class="row">
+
+  <div class="col">
+<label style="font-weight: bold;">Ounces/ cubic inch</label><br>
+<input id= "st" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Ounces/ cubic inch"
+onchange="fromStoneToOthers(this.value)" oninput = "fromStoneToOthers(this.value)">
+</div>
+<div class="col">
+<label style="font-weight: bold;">Ounces/galon</label><br>
+<input id= "ct" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Ounces/galon"
+onchange="fromCaratToOthers(this.value)" oninput = "fromCaratToOthers(this.value)">
+</div>
+</div>
+
+<div class="row">
+  <div class="col">
+<label style="font-weight: bold;">Pounds/cobic inch</label><br>
+<input id= "mg" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Pounds/cobic inch"
+onchange="fromMiligramToOthers(this.value)" oninput = "fromMiligramToOthers(this.value)">
+</div>
+
+<div class="col">
+    <label style="font-weight: bold;">Pounds/cobic foot</label><br>
+    <input id= "mt" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Metric Ton"
+    onchange="fromMetricTonToOthers(this.value)" oninput = "fromMetricTonToOthers(this.value)">
+    </div>
+
+</div>
+<div class="row">
+  <div class="col">
+    <label style="font-weight: bold;">Pounds/gallon</label><br>
+    <input id= "gallon" class="form-control text-center  mb-2 mr-sm-2" type="number" placeholder="Pounds/gallon"
+    onchange="fromGallonToOthers(this.value)" oninput = "fromGallonToOthers(this.value)">
+    </div>
+
+</div>
+</div>
+
+
+</div>
+<script src = "../../js/physics/density-conversion.js"></script>
+
+</div>
+</div>
+
+<div class="container-fluid">
+  <p class="about-para">
+
+  </p>
+</div>
+
+</body>
+
+</html>
